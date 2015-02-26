@@ -1,7 +1,12 @@
 This is quick experiment to try creating a custom element class using ES6's
 `class` syntax. This relies on the [Polymer 0.8 preview release](https://github.com/Polymer/polymer/tree/0.8-preview) and the [Traceur](https://github.com/google/traceur-compiler) transpiler.
 
-Some thoughts:
+## Demo
+
+A simple [demo](https://JanMiksovsky.github.io/polymer-classes-in-es6) shows
+a "Hello, world" element created with Polymer 0.8 as an ES6 class. _Requires Google Chrome._
+
+## Thoughts
 
 * Creating an element class with `class` feels good.
 
@@ -43,4 +48,3 @@ To me, this feels cleaner than
 ```
 document.registerElement( "my-element", MyElement );
 ```
-
