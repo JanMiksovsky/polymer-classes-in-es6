@@ -35,7 +35,7 @@ class BoringElement extends PolymerElement {
 * It'd be nice if classes could be auto-registered. ES6 classes don't appear to support a static constructor/initialization function, so it's unclear how this could be achieved. The demo shows use of a static method called `register`:
 
 ```
-Greet.register();
+GreetElement.register();
 ```
 
 While it's too bad this explicit registration step is required — there's little
