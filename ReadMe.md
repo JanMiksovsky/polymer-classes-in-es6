@@ -9,14 +9,10 @@ a "Hello, world" element created with Polymer 0.8 as an ES6 class. _Requires Goo
 
 ## Thoughts
 
-* Creating an element class with `class` feels good.
+* Creating an element class with `class` feels good!
 
 ```
-class Greet extends PolymerElement {
-
-  get is() {
-    return "greet-element";
-  }
+class GreetElement extends PolymerElement {
 
   created() {
     this.textContent = "Hello, " + this.textContent + "!";
@@ -25,18 +21,16 @@ class Greet extends PolymerElement {
 };
 ```
 
-* Polymer's standard (ES5) syntax for defining the element tag is to define a
-  `is` member on the prototype.
+* In an effort to make element definition as DRY as possible, by default an
+element class with the Pascal case name `FooElement` will result in a custom element whose tag name is the hypenated, lowercase name `foo-element`. If a custom tag name is desired, override the `is` getter:
 
 ```
-Polymer({
-  is: "my-element"
-});
+class BoringElement extends PolymerElement {
+  get is() {
+    return "awesome-element";
+  }
+}
 ```
-
-The minimal definition of classes in ES6 don't (seem to?) support the
-definition of a prototype member so succinctly. Instead, a getter is probably
-the closest that can be managed, as shown above. That feels clunky. Suggestions for improvements welcome.
 
 * It'd be nice if classes could be auto-registered. ES6 classes don't appear to support a static constructor/initialization function, so it's unclear how this could be achieved. The demo shows use of a static method called `register`:
 
