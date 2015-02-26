@@ -1,6 +1,9 @@
 This is quick experiment to try creating a custom element class using ES6's
 `class` syntax. This relies on the [Polymer 0.8 preview release](https://github.com/Polymer/polymer/tree/0.8-preview) and the [Traceur](https://github.com/google/traceur-compiler) transpiler.
 
+The Polymer team has already signaled an interest in supporting ES6 `class`
+syntax; this merely explores the extent to which that's possible today.
+
 ## Demo
 
 A simple [demo](https://JanMiksovsky.github.io/polymer-classes-in-es6) shows
