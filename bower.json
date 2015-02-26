@@ -1,0 +1,6 @@
+{
+  "name": "polymerClasses",
+  "dependencies": {
+    "polymer": "Polymer/polymer#0.8-preview"
+  }
+}
