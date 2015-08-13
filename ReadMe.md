@@ -13,11 +13,6 @@ a "Hello, world" element created with Polymer as an ES6 class. _Requires Google 
 
 ```
 class GreetElement extends PolymerElement {
-
-  created() {
-    this.textContent = "Hello, " + this.textContent + "!";
-  }
-
 };
 ```
 
