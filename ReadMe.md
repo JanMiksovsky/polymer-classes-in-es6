@@ -4,7 +4,7 @@ This experiment relies on the [Polymer 0.8 preview release](https://github.com/P
 
 ## Demo
 
-A simple [demo](https://JanMiksovsky.github.io/polymer-classes-in-es6) shows
+A simple [demo](https://JanMiksovsky.github.io/polymer-classes-in-es6?dom=shadow) shows
 a "Hello, world" element created with Polymer 0.8 as an ES6 class. _Requires Google Chrome._
 
 ## Thoughts
