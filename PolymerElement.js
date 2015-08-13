@@ -20,6 +20,10 @@ class PolymerElement extends Polymer.Class({}) {
   }
 
   static register() {
+    // Try to force the usual Polymer registration to happen. This is a pure
+    // hack, with no guarantees that this does everything the way Polymer
+    // normally would. At the moment (8/13/15), however, it does appear to work.
+    this.prototype.registerCallback();
     document.registerElement( this.prototype.is, this );
   }
 

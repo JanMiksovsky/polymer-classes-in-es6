@@ -8,23 +8,24 @@
 <script src="https://google.github.io/traceur-compiler/bin/traceur.js"></script>
 <script src="https://google.github.io/traceur-compiler/src/bootstrap.js"></script>
 
+<dom-module id="greet-element">
+  <template>
+    Hello, <content></content>!
+  </template>
+</dom-module>
+
 <script type="module">
 import PolymerElement from "PolymerElement.js";
 
 /* Define a custom element. */
 class GreetElement extends PolymerElement {
-
-  created() {
-    this.textContent = "Hello, " + this.textContent + "!";
-  }
-
 };
 
 GreetElement.register();
 </script>
 
 </head>
-  
+
 <body>
   <greet-element>world</greet-element>
 </body>
